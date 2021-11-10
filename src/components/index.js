@@ -1,6 +1,6 @@
-import Body from './Body';
+import Hero from './Hero';
 import Footer from './Footer';
 import Header from './Header';
 import Nav from './Nav';
 
-export { Body, Footer, Header, Nav }
+export { Hero, Footer, Header, Nav }

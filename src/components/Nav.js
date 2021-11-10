@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Nav() {
 
+  const [links, setLinks] = useState(['About Me', 'Portfolio', 'Resume', 'Contact Me']);
+
   return (
-    <h1>Nav</h1>
+    <nav className="nav">{ links }</nav>
   );
 };

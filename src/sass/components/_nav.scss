@@ -1,6 +1,8 @@
-@use '../abstracts/' as *;
+@use '../abstracts' as *;
 
 .nav {
-  background-color: $nav-bg;  
-  color: $nav-text-clr;
+  display: inline-block;
+  background-color: $nav-bg;
+  font-family: $apps-subtitle;
+  color: $nav-txt-clr;
 }

@@ -1,13 +1,17 @@
 import './sass/App.scss';
-import { Body, Footer, Header, Nav } from './components/';
+import { Hero, Footer, Header, Nav } from './components/';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header><Nav /> </Header>
-        <Body />
-        <Footer />
+    <div className="app">
+      <header className="app-header">
+        <Header />
+        <Nav />
       </header>
+      <Hero />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
