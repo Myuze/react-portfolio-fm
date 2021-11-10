@@ -103,6 +103,7 @@ select {
   color: #000;
   background-color: aqua;
   width: 100%;
+  max-height: 50vh;
 }
 
 .footer {
