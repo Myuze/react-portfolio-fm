@@ -1,0 +1,6 @@
+@use '../abstracts/' as *;
+
+.nav {
+  background-color: $nav-bg;  
+  color: $nav-text-clr;
+}
