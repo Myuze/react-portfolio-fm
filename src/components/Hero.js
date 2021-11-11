@@ -1,12 +1,12 @@
 import React from 'react';
-import apink from '../img/apink.jpg';
+import twice from '../img/twicetol.jpg';
 
 export default function Hero() {
 
   return (
     <div className="app-hero">
-      <h1>Hero</h1>
-      <img src={ apink } alt="Apink" />
+      <h1 className="app-heading">Hero</h1>
+      <img src={ twice } alt="TWICE" />
     </div>
   );
 };
