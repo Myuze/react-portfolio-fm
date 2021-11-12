@@ -1,6 +1,6 @@
 @use '../abstracts/' as *;
 
 .card {
-  font-size: $font-size;
+  font-size: $card-font-size;
   color: $red;
 }

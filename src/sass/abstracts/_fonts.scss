@@ -13,3 +13,14 @@ $aldrich: 'Aldrich', sans-serif;
 
 // Font Sizes
 $font-size: calc(10px + 2vmin);
+
+// Header Font
+$head-font-fam: $aldrich;
+$head-font-size: $font-size;
+
+// Footer Font
+$footer-font-size: $font-size;
+
+// Card Font
+$card-font-size: $font-size;
+$card-font-fam: $aldrich;
