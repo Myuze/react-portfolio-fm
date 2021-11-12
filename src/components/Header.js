@@ -3,6 +3,6 @@ import React from 'react';
 export default function Header() {
 
   return (
-    <h1>Florian Meneses</h1>
+    <h1 className="name">Florian Meneses</h1>
   );
 };

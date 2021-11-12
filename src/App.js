@@ -1,19 +1,6 @@
 import './sass/App.scss';
-import { Hero, Footer, Header, Nav } from './components/';
+import Main from './components/Main';
 
-function App() {
-  return (
-    <div className="app">
-      <header className="app-header">
-        <Header />
-        <Nav />
-      </header>
-      <Hero />
-      <footer>
-        <Footer />
-      </footer>
-    </div>
-  );
-}
+const App = () => <Main />;
 
 export default App;

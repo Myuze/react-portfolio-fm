@@ -1,8 +1,13 @@
 @use '../abstracts' as *;
 
 .nav {
-  display: inline-block;
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  justify-content: space-between;
   background-color: $nav-bg;
   font-family: $apps-subtitle;
   color: $nav-txt-clr;
+  text-decoration: none;
+  list-style-type: none;
 }

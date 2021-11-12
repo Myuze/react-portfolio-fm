@@ -1,6 +1,9 @@
 @use '../abstracts' as *;
 
 .app-body {
+  margin-bottom: 10vh;
+  padding: 3rem;
+  padding-top: 0;
   color: #000;
   background-color: aqua;
   width: 100%;

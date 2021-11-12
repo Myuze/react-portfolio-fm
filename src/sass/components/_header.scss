@@ -5,10 +5,13 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  min-height: 20vh;
+  padding: 0 3rem;
   font-size: $font-size;
   font-family: $aldrich;
   color: $red;
   background-color: $head-bg;
+}
+
+.name {
+  min-width: 45%;
 }

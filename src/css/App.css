@@ -85,6 +85,10 @@ select {
   background-color: cyan;
 }
 
+.name {
+  min-width: 45%;
+}
+
 .nav {
   display: inline-block;
   background-color: grey;
