@@ -1,9 +1,12 @@
 import React from 'react';
+import ContactLinks from './ContactLinks';
 
 export default function Footer() {
 
   return (
-    <p>Footer</p>
-    
+    <>
+      <p>Footer</p>
+      <ContactLinks />
+    </>
   );
 };

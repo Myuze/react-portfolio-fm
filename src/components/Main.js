@@ -4,7 +4,7 @@ import { Hero, Footer, Header, Nav } from '.';
 import { Home, About, Portfolio, Contact } from './pages';
 
 function Main() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
   const renderPage = () => {
     if (currentPage === 'Home') {
       return <Home />;

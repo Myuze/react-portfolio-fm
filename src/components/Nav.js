@@ -1,9 +1,6 @@
 import React from 'react';
 
 export default function Nav({ currentPage, handlePageChange }) {
-
-  // const [links, setLinks] = useState(['About Me', 'Portfolio', 'Resume', 'Contact Me']);
-
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">

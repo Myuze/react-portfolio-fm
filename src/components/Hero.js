@@ -1,5 +1,5 @@
 import React from 'react';
-import twice from '../img/twicetol.jpg';
+import twice from '../img/twice-alcoholfree.jpg';
 
 export default function Hero() {
 
