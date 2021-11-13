@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../../utils/helpers';
@@ -10,6 +10,10 @@ function Contact() {
   const [userName, setUserName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+
+  useEffect(() => {
+
+  }, [userName, email, message])
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -24,6 +28,21 @@ function Contact() {
       setUserName(inputValue);
     } else {
       setMessage(inputValue);
+    }
+  };
+
+  const handleMouseLeave = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+
+    // Based on the input type, we set the state of either email, username, and message
+    if (inputType === 'email') {
+      setEmail('Email Required');
+    } else if (inputType === 'userName') {
+      setUserName('User Name Required');
+    } else {
+      setMessage('Message Required');
     }
   };
 
@@ -53,6 +72,7 @@ function Contact() {
           value={email}
           name="email"
           onChange={handleInputChange}
+          onMouseLeave={handleMouseLeave}
           type="email"
           placeholder="email"
         />
@@ -60,6 +80,7 @@ function Contact() {
           value={userName}
           name="userName"
           onChange={handleInputChange}
+          onMouseLeave={handleMouseLeave}
           type="text"
           placeholder="username"
         />
@@ -67,6 +88,7 @@ function Contact() {
           value={message}
           name="message"
           onChange={handleInputChange}
+          onMouseLeave={handleMouseLeave}
           type="text"
           placeholder="Message"
         />
