@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+
+.tech-stack-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-family: $michroma;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom, black, black,#7e0083,hsl(214, 100%, 50%));
+  border-radius: 20px;
+  overflow: hidden;
+
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    color: lime;
+    font-family: $apps-subtitle;
+  }
+  
+  p {
+    font-size: $tech-font-size;
+  }
+}
+
+.languages .tech-stack {
+  position: relative;
+  color:rgb(51, 204, 37);
+  font-family: $apps-subtitle;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

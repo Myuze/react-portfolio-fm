@@ -6,9 +6,6 @@ import { Home, About, Portfolio, Contact } from './pages';
 function Main() {
   const [currentPage, setCurrentPage] = useState('About');
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
     if (currentPage === 'About') {
       return <About />;
     }
