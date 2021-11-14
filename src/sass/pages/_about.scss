@@ -7,13 +7,15 @@
 .info {
   font-size: $about-p-font-size;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 
 // Avatar Styling
 #avatar {
   width: 100%;
   max-width: 20vw;
+  min-width: 20vw;
   clip-path: circle(8vw at center);
   filter: drop-shadow(30px 10px 4px rgba(0, 255, 255, 0.959));
 }
@@ -55,4 +57,14 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    flex-flow: row wrap;
+
+    #avatar {
+      min-width: 10vw;
+    }
+  }
 }
