@@ -1,15 +1,29 @@
 import React, { useState } from "react";
 
 export default function ContactLinks() {
-  const [links, setLinks] = useState(['Github', 'Linked In', 'Twitter']);
+  const contactLinks = [
+    {
+      name: "Github", loc: "https://github.com/Myuze"
+    },
+    {
+      name: 'Linked In', loc: "https://www.linkedin.com/in/florian-meneses-02807b5/"
+    },
+    {
+      name: 'Twitter', loc: "https://twitter.com/Myuze"
+    }
+  ];
+
+  const [links, setLinks] = useState( contactLinks );
 
   return (
     <div className="contact-links">
       <ul>
         {links.map((link, i) => (
-          <li className="link" key={i}>
-            {`${link}`}
-          </li>
+          <a href={link.loc}>
+            <li className="link" key={i}>
+              {`${link.name}`}
+            </li>
+          </a>
         ))}
       </ul>
     </div>
