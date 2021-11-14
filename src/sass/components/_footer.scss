@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 .footer {
+  margin-top: auto;
   display: flex;
   flex-flow: row wrap;
   padding: 2rem;

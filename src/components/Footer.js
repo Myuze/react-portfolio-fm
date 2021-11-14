@@ -4,9 +4,9 @@ import ContactLinks from './ContactLinks';
 export default function Footer() {
 
   return (
-    <>
+    <footer className="footer">
       <p>Footer</p>
       <ContactLinks />
-    </>
+    </footer>
   );
 };

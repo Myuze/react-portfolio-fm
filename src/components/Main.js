@@ -26,15 +26,11 @@ function Main() {
         <Header />
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>
-      <div>
-        <Hero />
-      </div>
+      <Hero />
       <div className="app-body">
         {renderPage()}
       </div>
-      <footer className="footer">
         <Footer />
-      </footer>
     </div>
   );
 }
