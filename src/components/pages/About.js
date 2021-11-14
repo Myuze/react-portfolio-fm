@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import gura from '../../img/gura.png';
 
 export default function About() {
   const techStack = [
@@ -21,9 +22,12 @@ export default function About() {
   return (
     <div className="about">
       <h1>About Page</h1>
-      <p>
-        Passionate gaming industry veteran, working with tool and automation frameworks. Burgeoning Full Stack Developer.
-      </p>
+      <div className="info">
+        <p>
+          Passionate gaming industry veteran, working with tool and automation frameworks. Burgeoning Full Stack Developer.
+        </p>
+        <img id="avatar" src={gura} alt="Gura Avatar" />
+      </div>
       <h2>Tech Stack</h2>
       <div className="tech-stack-container">
         <ul className="tech-stack">

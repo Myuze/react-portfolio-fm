@@ -1,9 +1,29 @@
 @use '../abstracts/' as *;
 
+.about {
+  position: relative;
+}
+
+.info {
+  font-size: $about-p-font-size;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+// Avatar Styling
+#avatar {
+  width: 100%;
+  max-width: 20vw;
+  clip-path: circle(8vw at center);
+  filter: drop-shadow(30px 10px 4px rgba(0, 255, 255, 0.959));
+}
+
+// Tech Stack Styling
 .tech-stack-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  font-size: $tech-font-size;
   font-family: $michroma;
   margin-top: 1rem;
   padding: 1rem;
@@ -22,6 +42,7 @@
   }
   
   p {
+    flex: 1 1 75%;
     font-size: $tech-font-size;
   }
 }
