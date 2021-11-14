@@ -1,0 +1,63 @@
+@use '../abstracts/' as *;
+
+.portfolio {
+  position: relative;
+}
+
+
+#main-app {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+#main-app .app-text {
+  position: absolute;
+  bottom: 25px;
+  padding: 0.3rem 0.5rem;
+  font-family: $apps-title;
+  background: $app-bg-color;
+  color: $dark;
+}
+
+#main-app,
+.app-card {
+  border: 1px solid $light;
+}
+
+#apps img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+#apps img:hover {
+  opacity: 1;
+}
+
+#apps img:focus {
+  outline: 2px solid $light
+}
+
+#app-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  line-height: 0%;
+  color: $dark;
+}
+
+.app-card {
+  flex: 0 0 50%;
+  position: relative;
+}
+
+.app-card .app-text {
+  position: absolute;
+  bottom: 0px;
+  padding: 0.1rem;
+  font-family: $apps-title;
+  color: $dark;
+  background: $app-bg-color-fb; /* fallback color */
+  background: $app-bg-color;
+}
