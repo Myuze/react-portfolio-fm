@@ -1,7 +1,7 @@
 import '../sass/App.scss';
 import React, { useState } from 'react';
 import { Hero, Footer, Header } from '.';
-import { Home, About, Portfolio, Contact } from './pages';
+import { Resume, About, Portfolio, Contact } from './pages';
 
 function Main() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -11,6 +11,9 @@ function Main() {
     }
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
+    }
+    if (currentPage === 'Resume') {
+      return <Resume />;
     }
     return <Contact />;
   };
