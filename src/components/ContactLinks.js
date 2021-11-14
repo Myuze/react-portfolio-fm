@@ -19,11 +19,11 @@ export default function ContactLinks() {
     <div className="contact-links">
       <ul>
         {links.map((link, i) => (
-          <a href={link.loc}>
-            <li className="link" key={i}>
+          <li className="link" key={i}>
+            <a href={link.loc}>
               {`${link.name}`}
-            </li>
-          </a>
+            </a>
+          </li>
         ))}
       </ul>
     </div>
