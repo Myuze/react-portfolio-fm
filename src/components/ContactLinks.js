@@ -1,10 +1,10 @@
-import React, { setState, useState } from "react";
+import React, { useState } from "react";
 
 export default function ContactLinks() {
   const [links, setLinks] = useState(['Github', 'Linked In', 'Twitter']);
 
   return (
-    <>
+    <div className="contact-links">
       <ul>
         {links.map((link, i) => (
           <li className="link" key={i}>
@@ -12,6 +12,6 @@ export default function ContactLinks() {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };

@@ -1,6 +1,6 @@
 import '../sass/App.scss';
 import React, { useState } from 'react';
-import { Hero, Footer, Header, Nav } from '.';
+import { Hero, Footer, Header } from '.';
 import { Home, About, Portfolio, Contact } from './pages';
 
 function Main() {
@@ -22,15 +22,12 @@ function Main() {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <Header />
-        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      </header>
+      <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
       <Hero />
       <div className="app-body">
         {renderPage()}
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 }

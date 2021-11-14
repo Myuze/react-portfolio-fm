@@ -2,19 +2,18 @@
 
 .footer {
   margin-top: auto;
-  display: flex;
   flex-flow: row wrap;
-  padding: 2rem;
-  bottom: 0;
   width: 100%;
-  min-height: 10vh;
   text-align: center;
-  justify-content: space-between;
   color: $footer-txt-clr;
   background: $footer-bg;
   font-size: $footer-font-size;
-
+  
   ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    justify-content: center;
     list-style-type: none;
   }
 }
