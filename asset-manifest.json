@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-portfolio-fm/static/css/main.aec654c6.chunk.css",
-    "main.js": "/react-portfolio-fm/static/js/main.497670c1.chunk.js",
-    "main.js.map": "/react-portfolio-fm/static/js/main.497670c1.chunk.js.map",
+    "main.css": "/react-portfolio-fm/static/css/main.876f0a78.chunk.css",
+    "main.js": "/react-portfolio-fm/static/js/main.855b101a.chunk.js",
+    "main.js.map": "/react-portfolio-fm/static/js/main.855b101a.chunk.js.map",
     "runtime-main.js": "/react-portfolio-fm/static/js/runtime-main.2bb9db9b.js",
     "runtime-main.js.map": "/react-portfolio-fm/static/js/runtime-main.2bb9db9b.js.map",
     "static/js/2.c82c7a4d.chunk.js": "/react-portfolio-fm/static/js/2.c82c7a4d.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.2d4c90d7.chunk.js": "/react-portfolio-fm/static/js/3.2d4c90d7.chunk.js",
     "static/js/3.2d4c90d7.chunk.js.map": "/react-portfolio-fm/static/js/3.2d4c90d7.chunk.js.map",
     "index.html": "/react-portfolio-fm/index.html",
-    "static/css/main.aec654c6.chunk.css.map": "/react-portfolio-fm/static/css/main.aec654c6.chunk.css.map",
+    "static/css/main.876f0a78.chunk.css.map": "/react-portfolio-fm/static/css/main.876f0a78.chunk.css.map",
     "static/js/2.c82c7a4d.chunk.js.LICENSE.txt": "/react-portfolio-fm/static/js/2.c82c7a4d.chunk.js.LICENSE.txt",
     "static/media/twice-alcoholfree.43e2c8b7.jpg": "/react-portfolio-fm/static/media/twice-alcoholfree.43e2c8b7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2bb9db9b.js",
     "static/js/2.c82c7a4d.chunk.js",
-    "static/css/main.aec654c6.chunk.css",
-    "static/js/main.497670c1.chunk.js"
+    "static/css/main.876f0a78.chunk.css",
+    "static/js/main.855b101a.chunk.js"
   ]
 }
