@@ -2,10 +2,9 @@
 
 .nav {
   display: flex;
+  flex: 1 1 50%;
   flex-flow: row wrap;
-  width: 50%;
   justify-content: space-between;
-  // background-color: $nav-bg;
   font-family: $apps-subtitle;
   color: $nav-txt-clr;
 

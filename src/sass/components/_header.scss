@@ -10,8 +10,22 @@
   font-family: $head-font-fam;
   color: $head-txt-clr;
   background-color: $head-bg;
+  
+  .name {
+    flex: 0 1 50%;
+  }
+
+  ul {
+    padding: 0;
+  }
 }
 
-.name {
-  min-width: 45%;
+@media screen and (max-width: 1024px) {
+  .app-header {
+    flex-flow: column wrap;
+  }
+
+  .name {
+    text-align: center;
+  }
 }
