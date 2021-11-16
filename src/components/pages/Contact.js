@@ -70,6 +70,7 @@ export default function Contact() {
       <h2>Hello {userName}</h2>
       <form className="form contact">
         <input
+        className="email"
           value={email}
           name="email"
           onChange={handleInputChange}
@@ -78,6 +79,7 @@ export default function Contact() {
           placeholder="email"
         />
         <input
+          className="user"
           value={userName}
           name="userName"
           onChange={handleInputChange}
@@ -86,6 +88,7 @@ export default function Contact() {
           placeholder="username"
         />
         <input
+          className="message-input"
           value={message}
           name="message"
           onChange={handleInputChange}

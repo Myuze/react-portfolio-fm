@@ -2,14 +2,22 @@
 
 .contact {
   display: flex;
-  flex-flow: column nowrap;
-}
-
-.form {
-  display: flex;
+  gap: 1rem;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
-  width: 50%;
-  flex: 1 1 50%;
+  form {
+    flex: 1 1 100%;
+    width: 75%;
+  }
+}
+
+.user,
+.email {
+  width: 100%;
+} 
+
+.message-input {
+  width: 100%;
+  min-height: 200px;
+  text-align: start;
 }
