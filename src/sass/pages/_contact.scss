@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  flex: 1 1 50%;
+}

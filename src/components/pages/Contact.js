@@ -38,13 +38,13 @@ export default function Contact() {
     const inputClassList = target.classList;
 
     // Based on the input type, we set the state of either email, username, and message
-    if (inputType === 'email') {
-      inputClassList.add('Email Required');
-    } else if (inputType === 'userName') {
-      inputClassList.add('User Name Required');
-    } else {
-      inputClassList.add('Message Required');
-    }
+    // if (inputType === 'email') {
+    //   inputClassList.add('Email Required');
+    // } else if (inputType === 'userName') {
+    //   inputClassList.add('User Name Required');
+    // } else {
+    //   inputClassList.add('Message Required');
+    // }
   };
 
   const handleContactSubmit = (e) => {
@@ -66,9 +66,9 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      <p>Hello {userName}</p>
-      <form className="form">
+    <div className="contact">
+      <h2>Hello {userName}</h2>
+      <form className="form contact">
         <input
           value={email}
           name="email"
