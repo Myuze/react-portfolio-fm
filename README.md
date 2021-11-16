@@ -27,9 +27,9 @@ This is my React Portfolio, I created this site so that I can share my work and 
 ## Usage:
 
 ---
-From the repository directory:
 View at: https://github.com/Myuze/react-portfolio-fm
 OR
+From the repository directory:
 1. From the CLI use, `npm start`.
 2. Open the page at `localhost:3000`.
 
