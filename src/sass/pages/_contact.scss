@@ -12,12 +12,12 @@
 }
 
 .user,
-.email {
+.email,
+.message-input {
   width: 100%;
+  border-radius: 5px;
 } 
 
 .message-input {
-  width: 100%;
   min-height: 200px;
-  text-align: start;
 }
