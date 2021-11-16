@@ -15,9 +15,13 @@
     border-radius: 4px;
   }
 
+  .nav-link:hover {
+    color: white;
+  }
+
   .active {
     color: white;
-    box-shadow: 2px 4px 8px cyan;
+    box-shadow: 2px 4px 8px $nav-txt-clr;
   }
 
   li {
