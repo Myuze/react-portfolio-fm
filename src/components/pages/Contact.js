@@ -35,14 +35,15 @@ export default function Contact() {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
+    const inputClassList = target.classList;
 
     // Based on the input type, we set the state of either email, username, and message
     if (inputType === 'email') {
-      setEmail('Email Required');
+      inputClassList.add('Email Required');
     } else if (inputType === 'userName') {
-      setUserName('User Name Required');
+      inputClassList.add('User Name Required');
     } else {
-      setMessage('Message Required');
+      inputClassList.add('Message Required');
     }
   };
 

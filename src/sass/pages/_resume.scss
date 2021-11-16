@@ -1,0 +1,57 @@
+@use '../abstracts/' as *;
+
+.resume {
+  position: relative;
+
+  .resume-link {
+    font-size: $tech-font-size;
+    font-family: $apps-subtitle;
+    text-decoration: none;
+  }
+}
+
+.tech-info {
+  font-size: $about-p-font-size;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+// Tech Stack Styling
+.tech-stack-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: $tech-font-size;
+  font-family: $michroma;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom, black, black,#7e0083,hsl(214, 100%, 50%));
+  border-radius: 20px;
+  overflow: hidden;
+
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    color: lime;
+    font-family: $apps-subtitle;
+  }
+  
+  p {
+    flex: 1 1 75%;
+    font-size: $tech-font-size;
+  }
+}
+
+.languages .tech-stack {
+  position: relative;
+  color:rgb(51, 204, 37);
+  font-family: $apps-subtitle;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
