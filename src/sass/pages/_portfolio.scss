@@ -10,13 +10,20 @@
   position: relative;
 }
 
-#main-app .app-text {
+#main-app .app-text,
+.app-card .app-text {
   position: absolute;
   bottom: 25px;
   padding: 0.3rem 0.5rem;
   font-family: $apps-title;
   background: $app-bg-color;
   color: $dark;
+  
+  h4,
+  h5 {
+    margin: 0;
+    font-size: 1.7rem;
+  }
 }
 
 #main-app,
@@ -50,14 +57,4 @@
 .app-card {
   flex: 0 0 50%;
   position: relative;
-}
-
-.app-card .app-text {
-  position: absolute;
-  bottom: 0px;
-  padding: 0.1rem;
-  font-family: $apps-title;
-  color: $dark;
-  background: $app-bg-color-fb; /* fallback color */
-  background: $app-bg-color;
 }
