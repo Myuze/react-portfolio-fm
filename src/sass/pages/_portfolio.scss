@@ -18,6 +18,10 @@
   font-family: $apps-title;
   background: $app-bg-color;
   color: $dark;
+
+  img {
+    width: 30px;
+  }
   
   h4,
   h5 {

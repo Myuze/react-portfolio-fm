@@ -1,4 +1,5 @@
 import React from 'react';
+import gh_icon from '../img/gh-icon.png';
 
 export default function AppCard() {
   const apps = [
@@ -13,12 +14,14 @@ export default function AppCard() {
       "app_name": "Team Profile Generator",
       "app_subtitle": "Javascript/Inquirer",
       "app_img_URL": "https://github.com/Myuze/team-profile-gen/raw/main/team_profile.jpg",
+      "app_link_URL": "https://github.com/Myuze/team-profile-gen",
       "app_repo_URL": "https://github.com/Myuze/team-profile-gen",
     },
     {
       "app_name": "Weather Dashboard",
       "app_subtitle": "Bootstrap/Javascript",
       "app_img_URL": "https://github.com/Myuze/weather-fm/raw/main/weather.jpg",
+      "app_link_URL": "https://github.com/Myuze/weather-fm",
       "app_repo_URL": "https://github.com/Myuze/weather-fm",
     },
     {
@@ -41,12 +44,15 @@ export default function AppCard() {
     <div className="app-container">
       {apps.map((app, i) => (
         <div key={i} className="app-card">
-          <a href={ app.app_repo_URL }>
+          <a href={ app.app_link_URL }>
             <div class="app-text">
               <h5>{ app.app_name }</h5>
               <p>
                   { app.app_subtitle }
               </p>
+              <a href={ app.app_repo_URL }>
+                <img src={ gh_icon } alt="Github Icon" />
+              </a>
             </div>
             <img src={ app.app_img_URL } alt={ app.app_name } />
           </a>
