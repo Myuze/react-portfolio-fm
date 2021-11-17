@@ -1,4 +1,5 @@
 import React from 'react';
+import gh_icon from '../img/gh-icon.png';
 
 export default function MainApp() {
   const mainApp =   {
@@ -10,7 +11,7 @@ export default function MainApp() {
   }
   return (
     <div id="main-app">
-      <a href={ mainApp.app_repo_URL }>
+      <a href={ mainApp.app_link_URL }>
         <div className="app-text">
           <h4>{ mainApp.app_name}</h4>
           <p>
@@ -18,6 +19,9 @@ export default function MainApp() {
           </p>
         </div>
         <img src={ mainApp.app_img_URL } alt={ mainApp.app_name } />
+      </a>
+      <a className="gh-link" href={ mainApp.app_repo_URL }>
+        <img src={ gh_icon } alt="Github Icon" />
       </a>
     </div>
   )

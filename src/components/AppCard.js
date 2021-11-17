@@ -45,16 +45,16 @@ export default function AppCard() {
       {apps.map((app, i) => (
         <div key={i} className="app-card">
           <a href={ app.app_link_URL }>
-            <div class="app-text">
+            <div className="app-text">
               <h5>{ app.app_name }</h5>
               <p>
                   { app.app_subtitle }
               </p>
-              <a href={ app.app_repo_URL }>
-                <img src={ gh_icon } alt="Github Icon" />
-              </a>
             </div>
             <img src={ app.app_img_URL } alt={ app.app_name } />
+          </a>
+          <a className="gh-link" href={ app.app_repo_URL }>
+            <img src={ gh_icon } alt="Github Icon" />
           </a>
         </div>
       ))}

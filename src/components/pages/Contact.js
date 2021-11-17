@@ -32,19 +32,9 @@ export default function Contact() {
   };
 
   const handleMouseLeave = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputClassList = target.classList;
-
-    // Based on the input type, we set the state of either email, username, and message
-    // if (inputType === 'email') {
-    //   inputClassList.add('Email Required');
-    // } else if (inputType === 'userName') {
-    //   inputClassList.add('User Name Required');
-    // } else {
-    //   inputClassList.add('Message Required');
-    // }
+    if (!e.target.value) {
+      e.target.placeholder = `${e.target.name} is Required`
+    }
   };
 
   const handleContactSubmit = (e) => {
@@ -74,7 +64,7 @@ export default function Contact() {
           value={email}
           name="email"
           onChange={handleInputChange}
-          onMouseLeave={handleMouseLeave}
+          onBlur={handleMouseLeave}
           type="email"
           placeholder="email"
         />
@@ -83,7 +73,7 @@ export default function Contact() {
           value={userName}
           name="userName"
           onChange={handleInputChange}
-          onMouseLeave={handleMouseLeave}
+          onBlur={handleMouseLeave}
           type="text"
           placeholder="username"
         />
@@ -92,7 +82,7 @@ export default function Contact() {
           value={message}
           name="message"
           onChange={handleInputChange}
-          onMouseLeave={handleMouseLeave}
+          onBlur={handleMouseLeave}
           type="text"
           placeholder="Message"
         />

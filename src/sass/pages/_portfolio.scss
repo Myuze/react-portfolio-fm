@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.gh-link img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+}
 
 #main-app {
   flex: 1 1 100%;
@@ -19,9 +25,6 @@
   background: $app-bg-color;
   color: $dark;
 
-  img {
-    width: 30px;
-  }
   
   h4,
   h5 {
