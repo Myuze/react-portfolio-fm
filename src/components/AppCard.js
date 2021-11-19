@@ -41,9 +41,9 @@ export default function AppCard() {
   ]
   
   return (
-    <div className="app-container">
+    <div className="app-grid">
       {apps.map((app, i) => (
-        <div key={i} className="app-card">
+        <div key={i} className="card card-wide">
           <a href={ app.app_link_URL }>
             <div className="app-text">
               <h5>{ app.app_name }</h5>

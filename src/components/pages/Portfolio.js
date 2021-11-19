@@ -6,8 +6,8 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <MainApp />
-      <AppCard />
+        <MainApp />
+        <AppCard />
     </div>
   );
 }
