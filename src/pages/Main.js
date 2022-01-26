@@ -3,27 +3,13 @@ import { Hero, Footer, Header } from './components';
 import { Resume, About, Portfolio, Contact } from '../pages';
 
 export default function Main() {
-  const [currentPage, setCurrentPage] = useState('About');
-  const renderPage = () => {
-    if (currentPage === 'About') {
-      return <About />;
-    }
-    if (currentPage === 'Portfolio') {
-      return <Portfolio />;
-    }
-    if (currentPage === 'Resume') {
-      return <Resume />;
-    }
-    return <Contact />;
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
+  let pages = [Resume, About, Portfolio, Contact];
 
   return (
     <div className='app'>
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header />
       <Hero />
-      <div className='app-body'>{renderPage()}</div>
+      <div className='app-body'>{pages[2]()}</div>
       <Footer />
     </div>
   );
