@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MainApp, AppCard } from '../'
+import { MainApp, AppCard } from './components';
 
 export default function Portfolio() {
   return (

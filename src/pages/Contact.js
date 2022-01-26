@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Here we import a helper function that will check if the email is valid
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 
 export default function Contact() {
   // Create state variables for the fields in the Contact
@@ -11,9 +11,7 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-
-  }, [userName, email, message])
+  useEffect(() => {}, [userName, email, message]);
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -33,7 +31,7 @@ export default function Contact() {
 
   const handleMouseLeave = (e) => {
     if (!e.target.value) {
-      e.target.placeholder = `${e.target.name} is Required`
+      e.target.placeholder = `${e.target.name} is Required`;
     }
   };
 
@@ -56,41 +54,43 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact">
+    <div className='contact'>
       <h2>Hello {userName}</h2>
-      <form className="form contact">
+      <form className='form contact'>
         <input
-        className="email"
+          className='email'
           value={email}
-          name="email"
+          name='email'
           onChange={handleInputChange}
           onBlur={handleMouseLeave}
-          type="email"
-          placeholder="email"
+          type='email'
+          placeholder='email'
         />
         <input
-          className="user"
+          className='user'
           value={userName}
-          name="userName"
+          name='userName'
           onChange={handleInputChange}
           onBlur={handleMouseLeave}
-          type="text"
-          placeholder="username"
+          type='text'
+          placeholder='username'
         />
         <input
-          className="message-input"
+          className='message-input'
           value={message}
-          name="message"
+          name='message'
           onChange={handleInputChange}
           onBlur={handleMouseLeave}
-          type="text"
-          placeholder="Message"
+          type='text'
+          placeholder='Message'
         />
-        <button type="button" onClick={handleContactSubmit}>Submit</button>
+        <button type='button' onClick={handleContactSubmit}>
+          Submit
+        </button>
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text">{errorMessage}</p>
+          <p className='error-text'>{errorMessage}</p>
         </div>
       )}
     </div>

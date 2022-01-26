@@ -1,9 +1,8 @@
-import '../sass/App.scss';
 import React, { useState } from 'react';
-import { Hero, Footer, Header } from '.';
-import { Resume, About, Portfolio, Contact } from './pages';
+import { Hero, Footer, Header } from './components';
+import { Resume, About, Portfolio, Contact } from '../pages';
 
-function Main() {
+export default function Main() {
   const [currentPage, setCurrentPage] = useState('About');
   const renderPage = () => {
     if (currentPage === 'About') {
@@ -21,15 +20,11 @@ function Main() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="app">
-      <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
+    <div className='app'>
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <Hero />
-      <div className="app-body">
-        {renderPage()}
-      </div>
+      <div className='app-body'>{renderPage()}</div>
       <Footer />
     </div>
   );
 }
-
-export default Main;
