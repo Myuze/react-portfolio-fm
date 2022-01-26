@@ -4,6 +4,38 @@
   position: relative;
 }
 
+.app-grid {
+  display: grid;
+  margin-top: 1rem;
+  gap: 1rem;
+
+  grid-template-columns: repeat(2, minmax(auto-fill, 1fr));
+}
+
+@media screen and (min-width: 600px) {
+  .app-grid {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+}
+
+#main-app,
+.card {
+  position: relative;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  transition: all 500ms;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#main-app:hover,
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
+
 .gh-link img {
   position: absolute;
   bottom: 0;
@@ -16,52 +48,17 @@
   position: relative;
 }
 
-#main-app .app-text,
-.app-card .app-text {
+h4,
+h5 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.app-text {
   position: absolute;
   bottom: 25px;
   padding: 0.3rem 0.5rem;
   font-family: $apps-title;
   background: $app-bg-color;
   color: $dark;
-
-  
-  h4,
-  h5 {
-    margin: 0;
-    font-size: 1.7rem;
-  }
-}
-
-#main-app,
-.app-card {
-  border: 1px solid $light;
-}
-
-#apps img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-
-#apps img:hover {
-  opacity: 1;
-}
-
-#apps img:focus {
-  outline: 2px solid $light
-}
-
-#app-card-container {
-  display: flex;
-  flex-flow: row wrap;
-  line-height: 0%;
-  color: $dark;
-}
-
-.app-card {
-  flex: 0 0 50%;
-  position: relative;
 }
