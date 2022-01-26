@@ -13,8 +13,10 @@ export default function Resume() {
           <strong>Download Resume</strong>
         </a>
       </p>
-      <TechStack />
-      <Languages />
+      <div className='tech-stack-container'>
+        <TechStack />
+        <Languages />
+      </div>
     </div>
   );
 }

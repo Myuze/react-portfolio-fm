@@ -9,7 +9,7 @@ export default function Main() {
     <div className='app'>
       <Header />
       <Hero />
-      <div className='app-body'>{pages[2]()}</div>
+      <div className='app-body'>{pages[0]()}</div>
       <Footer />
     </div>
   );
