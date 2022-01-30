@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import { Hero, Footer, Header } from './components';
 import { Resume, About, Portfolio, Contact } from '../pages';
 
 export default function Main() {
-  let pages = [Resume, About, Portfolio, Contact];
-
   return (
     <div className='app'>
       <Header />
       <Hero />
-      <div className='app-body'>{pages[0]()}</div>
+      <Routes>
+        <Route exact path='/' element={<About />} />
+        <Route exact path='About' element={<About />} />
+        <Route exact path='Resume' element={<Resume />} />
+        <Route exact path='Portfolio' element={<Portfolio />} />
+        <Route exact path='Contact' element={<Contact />} />
+      </Routes>
       <Footer />
     </div>
   );

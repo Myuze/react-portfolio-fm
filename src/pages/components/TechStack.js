@@ -2,12 +2,12 @@ import { useState } from 'react';
 
 export default function TechStack() {
   const techStack = [
-    'Express',
-    'Handlebars',
     'React',
-    'MySQL',
-    'MongoDB',
     'Node.js',
+    'Express',
+    'MongoDB',
+    'MySQL',
+    'Handlebars',
   ];
 
   const [tech, setTechStack] = useState(techStack);
